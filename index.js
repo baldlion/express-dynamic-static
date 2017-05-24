@@ -3,11 +3,10 @@ const path = require('path');
 
 const createDynamicStatic = function () {
   let instance;
-  let staticPath;
-  let expressStatic;
 
   function init(defaultPath) {
-    staticPath = defaultPath || path.resolve('public');
+    let expressStatic;
+    let staticPath = defaultPath || path.resolve('public');
 
     const dynamicStatic = function (req, res, next) {
       expressStatic = express.static(staticPath);
