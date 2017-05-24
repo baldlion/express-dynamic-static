@@ -6,7 +6,7 @@ When working with multiple client applications on the same server, each client
 application may have its own static assets folder. This plugin lets you define
 the path to the static assets folder at runtime when a route is requested.
 
-A typical use case might be an client-side app and a client-side admin app
+A typical use case might be a client-side app and a client-side admin app
 running on the same server.
 
 ## Install
