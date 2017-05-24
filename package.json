@@ -1,6 +1,6 @@
 {
   "name": "express-dynamic-static",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Middleware to dynamically change the path of express.static at runtime",
   "main": "index.js",
   "repository": {
