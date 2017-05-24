@@ -15,11 +15,11 @@ running on the same server.
 ## Example
 ```js
 const express = require('express');
-const dynamicStatic = require('express-dynamic-static');
+const dynamicStatic = require('express-dynamic-static')();
 const path = require('path');
 
 const app = express();
-app.use(dynamicStatic());
+app.use(dynamicStatic);
 
 app.get('/', (req, res) => {
     dynamicStatic.setPath(path.resolve(__dirname, 'path/to/app/assets'));
@@ -40,9 +40,10 @@ app.get('/admin', (req, res) => {
 ### Options
 
 An initial static path may be passed (default: `public`):
-    
-    app.use(dynamicStatic(path.join(__dirname, 'path/to/default/assets'));
-
+```js
+const defaultStaticPath = path.join(__dirname, 'path/to/default/assets');
+const dynamicStatic = require('express-dynamic-static')(defaultStaticPath);
+```
 
 
 
