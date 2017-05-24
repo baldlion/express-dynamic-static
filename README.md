@@ -39,7 +39,7 @@ app.get('/admin', (req, res) => {
 
 ### Options
 
-A default static path can be passed.
+An initial static path may be passed (default: `public`):
     
     app.use(dynamicStatic(path.join(__dirname, 'path/to/default/assets'));
 
