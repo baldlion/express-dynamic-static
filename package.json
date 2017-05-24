@@ -3,11 +3,15 @@
   "version": "0.0.1",
   "description": "Middleware to dynamically change the path of express.static at runtime",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baldlion/express-dynamic-static.git"
+  },
   "scripts": {
 
   },
-  "author": "",
-  "license": "ISC",
+  "author": "baldlion",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.15.3"
   }
